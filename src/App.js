@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Children } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    const ProtectedRoute = ({childrenhildren}) => {
+        return <Naavigate to="/login" replace />
+
+    }
+    return children;
 }
 
-export default App;
+return (<>
+<>
+    <Route path="/login" element={<LoginPage onLogin={handleLogin} />} />
+<Route path="/" element={
+    <ProtectedRoute>
+        <PokedexPage />
+    </ProtectedRoute>}> 
+    <Route path="/pokemon/id" element={
+        <ProtectedRoute></ProtectedRoute>
+    }
+
+</>)
